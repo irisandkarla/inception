@@ -1,14 +1,14 @@
 <template>
   <section class="home">
     <div class="py-24 md:py-36 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-      <div class="flex flex-col w-full xl:w-2/5">
+      <div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start">
         <img
           alt="Hero"
           class="rounded shadow-xl"
           src="https://source.unsplash.com/random/720x400"
         />
       </div>
-      <div class="flex flex-col w-full xl:w-3/5 ml-10 justify-center lg:items-start overflow-y-hidden">
+      <div class="flex flex-col w-full xl:w-3/5 overflow-y-hidden">
         <div v-html="$md.render(welcomeText)" class="home__welcome markdown" />
 
         <div class="mb-12 xl:mb-0">
