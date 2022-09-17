@@ -76,6 +76,10 @@ const nuxtConfig: Configuration = {
    */
   modules: ['@nuxtjs/pwa', '@nuxtjs/style-resources', '@nuxtjs/markdownit'],
 
+  router: {
+    middleware: 'router-auth'
+  },
+
 
   markdownit: {
     preset: 'default',
