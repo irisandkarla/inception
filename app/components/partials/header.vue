@@ -22,39 +22,26 @@
           <nuxt-link :to="`/${page.slug}`">{{ page.title }}</nuxt-link>
         </li>
         <li>
-        <div>
-          <div v-if="!$store.state.user">
-            <login-form></login-form>
-          </div>
-          <div v-else class="flexWrapper align-center">
-            <h4 class="blue--text">You're logged in!</h4>
-            <v-btn icon class="blue white--text">
-              <v-icon>thumb_up</v-icon>
-            </v-btn>
-          </div>
-        </div>
+          <nuxt-link to="/login" class="block font-medium px-4 py-1 md:p-2 lg:px-4">
+            Login
+          </nuxt-link>
         </li>
       </ul>
     </nav>
   </header>
 </template>
-<script>
-  import LoginForm from '~/components/LoginForm'
-  export default {
-    components: {
-      LoginForm
-    }
-  }
-</script>
+
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator';
 import settings from '@/content/settings/general.json';
 
 @Component
 export default class Header extends Vue {
+
   get pages(): Page[] {
     return this.$store.state.pages;
   }
+  
 
   logo = settings.logo;
 }
