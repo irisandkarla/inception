@@ -22,9 +22,7 @@
           <nuxt-link :to="`/${page.slug}`">{{ page.title }}</nuxt-link>
         </li>
         <li>
-          <v-layout justify-center align-center>
-    <v-flex xs12 sm8>
-        <div class="mt-5">
+        <div>
           <div v-if="!$store.state.user">
             <login-form></login-form>
           </div>
@@ -35,8 +33,6 @@
             </v-btn>
           </div>
         </div>
-    </v-flex>
-  </v-layout>
         </li>
       </ul>
     </nav>
