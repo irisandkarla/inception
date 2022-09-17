@@ -1,20 +1,6 @@
 <template>
   <section class="home">
-    <v-layout justify-center align-center>
-    <v-flex xs12 sm8>
-        <div class="mt-5">
-          <div v-if="!$store.state.user">
-            <login-form></login-form>
-          </div>
-          <div v-else class="flexWrapper align-center">
-            <h4 class="blue--text">You're logged in!</h4>
-            <v-btn icon class="blue white--text">
-              <v-icon>thumb_up</v-icon>
-            </v-btn>
-          </div>
-        </div>
-    </v-flex>
-  </v-layout>
+    
     <div class="py-24 md:py-36 mx-auto flex flex-wrap flex-col md:flex-row items-center">
       <div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start">
         <img
@@ -59,11 +45,4 @@
   </section>
 </template>
 
-<script>
-  import LoginForm from '~/components/LoginForm'
-  export default {
-    components: {
-      LoginForm
-    }
-  }
-  </script>
+
