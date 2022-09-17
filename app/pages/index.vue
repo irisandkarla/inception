@@ -1,9 +1,5 @@
 <template>
   <section class="home">
-<<<<<<< HEAD
-    
-=======
->>>>>>> parent of 83965c1 (added firebase)
     <div class="py-24 md:py-36 mx-auto flex flex-wrap flex-col md:flex-row items-center">
       <div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start">
         <img
